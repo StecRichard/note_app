@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Route, Switch } from "react-router";
+import NoteList from "./components/note/NoteList";
+import NotFound from "./components/NotFound";
+import NoteDetail from "./components/note/NoteDetail";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Home from "./components/Home";
+import NoteEdit from "./components/note/NoteEdit";
+import NoteCreate from "./components/note/NoteCreate";
+import styledComps from "./static/styledComps";
 
 function App() {
   return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-          <p>
-            Edit <code> src / App.js </code> and save to reload.
-          </p>
-          <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+    <div>
+      <styledComps.PageContainer>
+        <Header/>
+        <styledComps.ContentContainer>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/notes" component={NoteList}/>
+            <Route exact path="/note/detail/:id" component={NoteDetail}/>
+            <Route exact path="/note/new" component={NoteCreate}/>
+            <Route exact path="/note/edit/:id" component={NoteEdit}/>
+            <Route render={() => <NotFound/>}/>
+          </Switch>
+        </styledComps.ContentContainer>
+        <Footer/>
+      </styledComps.PageContainer>
+    </div>
   );
 }
 

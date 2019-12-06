@@ -1,0 +1,18 @@
+{
+  "appName": "Note Application",
+  "home": "Home",
+  "welcome": "Welcome",
+  "notFound": "Requested page was not found",
+  "note-list": "Note list",
+  "note-title": "Title",
+  "note": "Note",
+  "edit": "Edit",
+  "note-count": "Notes count",
+  "note-new": "New Note",
+  "note-load": "Load notes",
+  "language": "Language",
+  "loading": "Loading",
+  "create": "Save",
+  "create-title": "Create of note",
+  "edit-title": "Edit of note"
+}

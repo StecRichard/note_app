@@ -1,0 +1,18 @@
+{
+  "appName": "Poznámková aplikace",
+  "home": "Domů",
+  "welcome": "Vítejte",
+  "notFound": "Požadována stránka nebyla nalezena",
+  "note-list": "Seznam poznámek",
+  "note-title": "Titulek",
+  "edit": "Upravit",
+  "note": "Poznámka",
+  "note-count": "Počet poznámek",
+  "note-new": "Nová poznámka",
+  "note-load": "Načíst poznámky",
+  "loading": "Načítání",
+  "language": "Jazyk",
+  "create": "Uložit",
+  "create-title": "Vytvoření poznámky",
+  "edit-title": "Editace poznámky"
+}
